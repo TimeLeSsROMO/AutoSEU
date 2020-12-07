@@ -345,79 +345,79 @@ def enterCampus(browser):
               time.sleep(1)        
               
               #####################################################################################
-              # 6. 通行开始时间
+              # 通行开始时间
               js = "document.querySelector(\"#app > div > div > div > div.emapm-form > div:nth-child(2) > div > div.mint-cell-group-content.mint-hairline--top-bottom.mt-bg-white.mt-bColor-after-grey-lv5 > div:nth-child(5) > div > a \").click();"
               browser.execute_script(js)
               time.sleep(1)
 
-              # 6. 确定年份
+              # 确定年份
               js = "document.querySelector(\"#app > div > div > div > div.emapm-form > div:nth-child(2) > div > div.mint-cell-group-content.mint-hairline--top-bottom.mt-bg-white.mt-bColor-after-grey-lv5 > div:nth-child(5) > div > div.mint-popup.mt-bg-white.mint-datetime.emapm-date-picker.mint-popup-bottom > div > div.mint-picker__columns > div:nth-child(1) > ul > li:nth-child(" + str(int(tomorrow_year)-1919) + ")\").click();"
               browser.execute_script(js)
               time.sleep(1)
 
-              # 6. 确定月份
+              # 确定月份
               js = "document.querySelector(\"#app > div > div > div > div.emapm-form > div:nth-child(2) > div > div.mint-cell-group-content.mint-hairline--top-bottom.mt-bg-white.mt-bColor-after-grey-lv5 > div:nth-child(5) > div > div.mint-popup.mt-bg-white.mint-datetime.emapm-date-picker.mint-popup-bottom > div > div.mint-picker__columns > div:nth-child(2) > ul > li:nth-child(" + tomorrow_month + ")\").click();"
               browser.execute_script(js)
               time.sleep(1)
 
-              # 6. 确定日期
+              # 确定日期
               js = "document.querySelector(\"#app > div > div > div > div.emapm-form > div:nth-child(2) > div > div.mint-cell-group-content.mint-hairline--top-bottom.mt-bg-white.mt-bColor-after-grey-lv5 > div:nth-child(5) > div > div.mint-popup.mt-bg-white.mint-datetime.emapm-date-picker.mint-popup-bottom > div > div.mint-picker__columns > div:nth-child(3) > ul > li:nth-child(" + tomorrow_day + ")\").click();"
               browser.execute_script(js)
               time.sleep(1)
 
-              # 6. 确定小时 0
+              # 确定小时 0
               js = "document.querySelector(\"#app > div > div > div > div.emapm-form > div:nth-child(2) > div > div.mint-cell-group-content.mint-hairline--top-bottom.mt-bg-white.mt-bColor-after-grey-lv5 > div:nth-child(5) > div > div.mint-popup.mt-bg-white.mint-datetime.emapm-date-picker.mint-popup-bottom > div > div.mint-picker__columns > div:nth-child(4) > ul > li:nth-child(1)\").click();"
               browser.execute_script(js)
               time.sleep(1)
 
-              # 6. 确定分钟 16
+              # 确定分钟 16
               js = "document.querySelector(\"#app > div > div > div > div.emapm-form > div:nth-child(2) > div > div.mint-cell-group-content.mint-hairline--top-bottom.mt-bg-white.mt-bColor-after-grey-lv5 > div:nth-child(5) > div > div.mint-popup.mt-bg-white.mint-datetime.emapm-date-picker.mint-popup-bottom > div > div.mint-picker__columns > div:nth-child(5) > ul > li:nth-child(17)\").click();"
               browser.execute_script(js)
               time.sleep(1)
 
-              # 6.最后点确认
+              # 最后点确认
               js = "document.querySelector(\"#app > div > div > div > div.emapm-form > div:nth-child(2) > div > div.mint-cell-group-content.mint-hairline--top-bottom.mt-bg-white.mt-bColor-after-grey-lv5 > div:nth-child(5) > div > div.mint-popup.mt-bg-white.mint-datetime.emapm-date-picker.mint-popup-bottom > div > div.mint-picker__toolbar.mt-bColor-grey-lv6 > div.mint-picker__confirm.mt-color-theme\").click();"
               browser.execute_script(js)
               time.sleep(1)
 
               #####################################################################################
-              # 6. 通行结束时间
+              # 通行结束时间
               js = "document.querySelector(\"#app > div > div > div > div.emapm-form > div:nth-child(2) > div > div.mint-cell-group-content.mint-hairline--top-bottom.mt-bg-white.mt-bColor-after-grey-lv5 > div:nth-child(6) > div > a\").click();"
               browser.execute_script(js)
               time.sleep(1)
 
-              # 6. 确定年份
+              # 确定年份
               js = "document.querySelector(\"#app > div > div > div > div.emapm-form > div:nth-child(2) > div > div.mint-cell-group-content.mint-hairline--top-bottom.mt-bg-white.mt-bColor-after-grey-lv5 > div:nth-child(6) > div > div.mint-popup.mt-bg-white.mint-datetime.emapm-date-picker.mint-popup-bottom > div > div.mint-picker__columns > div:nth-child(1) > ul > li:nth-child(" + str(int(tomorrow_year)-1919) + ")\").click();"
               browser.execute_script(js)
               time.sleep(1)
 
-              # 6. 确定月份
+              # 确定月份
               js = "document.querySelector(\"#app > div > div > div > div.emapm-form > div:nth-child(2) > div > div.mint-cell-group-content.mint-hairline--top-bottom.mt-bg-white.mt-bColor-after-grey-lv5 > div:nth-child(6) > div > div.mint-popup.mt-bg-white.mint-datetime.emapm-date-picker.mint-popup-bottom > div > div.mint-picker__columns > div:nth-child(2) > ul > li:nth-child(" + tomorrow_month + ")\").click();"
               browser.execute_script(js)
               time.sleep(1)
 
-              # 6. 确定日期
+              # 确定日期
               js = "document.querySelector(\"#app > div > div > div > div.emapm-form > div:nth-child(2) > div > div.mint-cell-group-content.mint-hairline--top-bottom.mt-bg-white.mt-bColor-after-grey-lv5 > div:nth-child(6) > div > div.mint-popup.mt-bg-white.mint-datetime.emapm-date-picker.mint-popup-bottom > div > div.mint-picker__columns > div:nth-child(3) > ul > li:nth-child(" + tomorrow_day + ")\").click();"
               browser.execute_script(js)
               time.sleep(1)
 
-              # 6. 确定小时 23
+              # 确定小时 23
               js = "document.querySelector(\"#app > div > div > div > div.emapm-form > div:nth-child(2) > div > div.mint-cell-group-content.mint-hairline--top-bottom.mt-bg-white.mt-bColor-after-grey-lv5 > div:nth-child(6) > div > div.mint-popup.mt-bg-white.mint-datetime.emapm-date-picker.mint-popup-bottom > div > div.mint-picker__columns > div:nth-child(4) > ul > li:nth-child(24)\").click();"
               browser.execute_script(js)
               time.sleep(1)
 
-              # 6. 确定分钟 52
+              # 确定分钟 52
               js = "document.querySelector(\"#app > div > div > div > div.emapm-form > div:nth-child(2) > div > div.mint-cell-group-content.mint-hairline--top-bottom.mt-bg-white.mt-bColor-after-grey-lv5 > div:nth-child(6) > div > div.mint-popup.mt-bg-white.mint-datetime.emapm-date-picker.mint-popup-bottom > div > div.mint-picker__columns > div:nth-child(5) > ul > li:nth-child(53)\").click();"
               browser.execute_script(js)
               time.sleep(1)
 
-              # 6. 最后点确认
+              # 最后点确认
               js = "document.querySelector(\"#app > div > div > div > div.emapm-form > div:nth-child(2) > div > div.mint-cell-group-content.mint-hairline--top-bottom.mt-bg-white.mt-bColor-after-grey-lv5 > div:nth-child(6) > div > div.mint-popup.mt-bg-white.mint-datetime.emapm-date-picker.mint-popup-bottom > div > div.mint-picker__toolbar.mt-bColor-grey-lv6 > div.mint-picker__confirm.mt-color-theme\").click();"
               browser.execute_script(js)
               time.sleep(1)
 
               #####################################################################################
-              # 7. 请假详情
+              # 请假详情
               input_box = browser.find_element_by_xpath("/html/body/div[1]/div/div/div/div[1]/div[2]/div/div[2]/div[8]/div/a/div[2]/div[2]/div[1]/textarea")
               try:
                   input_box.send_keys(reas)
@@ -454,7 +454,7 @@ def enterCampus(browser):
               time.sleep(1) 
 
               #####################################################################################        
-              # 7. 地址
+              # 地址
               input_box = browser.find_element_by_xpath("/html/body/div[1]/div/div/div/div[1]/div[2]/div/div[2]/div[20]/div/a/div[2]/div[2]/input")
               try:
                   input_box.send_keys(adres) 
@@ -464,18 +464,18 @@ def enterCampus(browser):
               time.sleep(1) 
 
               #####################################################################################
-              # 8. 提交
+              # 提交
               js = "document.querySelector(\"#app > div > div > div > div.mint-layout-container.sjakudbpe.OPjb4dozyy > button\").click();"
               browser.execute_script(js)
               print('出校审批已提交')
               time.sleep(5)
               
               #####################################################################################
-              # 9. log
+              # log
               writeLog("已完成第二日出校审批")
               
               #####################################################################################
-              # 10. 检查是否通过                           
+              # 检查是否通过                           
               checkpassed(browser)
               IFF()
          else:
