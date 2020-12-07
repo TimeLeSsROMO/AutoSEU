@@ -1,7 +1,8 @@
 # Auto
 自动进行东南大学的每日健康申报以及次日的出校审批
 一个自动每日健康申报以及次日出校审批的python脚本，基于Python-Selenium，Chrome-Chromedriver
-基于StephenHoo/AutoLogin（https://github.com/StephenHoo/AutoLogin），分支不过去…只能自己新建一个项目了，请谅解。
+基于StephenHoo/AutoLogin https://github.com/StephenHoo/AutoLogin
+分支不过去…只能自己新建一个项目了，请谅解。
 
 如果您想自己编译python代码，则需要：
 python3
@@ -14,6 +15,7 @@ python3
 请确保在现版系统中进行过至少一次健康申报和出校审批，否则可能出现奇怪的错误导致无法正常运行
 
 Version 1.6更新日志：
+
 1.重写了60%以上的代码（很谨慎的描述），精简部分无用代码，各功能在目前的新版网站上完美运行
 2.新增更多人性化选项，可以单独进行健康申报或者出校审批
 3.新增检测是否处在健康申报和出校审批的时间段功能
