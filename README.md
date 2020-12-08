@@ -4,9 +4,7 @@
 
 一个自动每日健康申报以及次日出校审批的python脚本，基于Python-Selenium，Chrome-Chromedriver
 
-基于StephenHoo/AutoLogin
-https://github.com/StephenHoo/AutoLogin
-分支不过去…只能自己新建一个项目了，请谅解。部分内容可以参见这位老哥的内容，普通使用只需要在这里下载，点开即可
+基于[StephenHoo/AutoLogin](https://github.com/StephenHoo/AutoLogin)，但是分支不过去，是我自己太憨了…只能自己新建一个项目了，请谅解。部分内容可以参见这位老哥的内容，普通使用只需要在这里下载，点开即可。
 
 如果您想自己编译python代码，则需要：
 
@@ -16,7 +14,8 @@ python3
 
 与浏览器对应的Webdriver
 
-正常使用请前往#releases#下载最新版本安装包并解压。直接点击exe文件运行程序，第一次运行需要输入您的一卡通号、密码、家长、辅导员等信息（完全保存个人计算机本地，并不会泄露给任何人），之后不需要再进行此操作。
+正常使用请前往[releases](https://github.com/TimeLeSsROMO/AutoSEU/releases/tag/AutoSEU_1.6)下载最新版本安装包并解压，确保文件夹中的chromedriver.exe与AutoSEU_1.6.exe在同一文件夹即可（chromedriver需要与chrome浏览器版本对应，压缩包中自带的是目前的最新版，如有更新请自行前往[对应网站]（ http://npm.taobao.org/mirrors/chromedriver ） 下载）。
+直接点击exe文件运行程序，第一次运行需要输入您的一卡通号、密码、家长、辅导员等信息（完全保存个人计算机本地，并不会泄露给任何人），之后不需要再进行此操作。
 
 需要安装好chrome浏览器，最好是安装在默认位置，否则操作会比较麻烦
 
