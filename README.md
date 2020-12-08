@@ -14,7 +14,7 @@ python3
 
 与浏览器对应的Webdriver
 
-正常使用请前往[releases](https://github.com/TimeLeSsROMO/AutoSEU/releases/tag/AutoSEU_1.6)下载最新版本安装包并解压，确保文件夹中的chromedriver.exe与AutoSEU_1.6.exe在同一文件夹即可（chromedriver需要与chrome浏览器版本对应，压缩包中自带的是目前的最新版，如有更新请自行前往[对应网站]（ http://npm.taobao.org/mirrors/chromedriver ） 下载）。
+正常使用请前往[releases](https://github.com/TimeLeSsROMO/AutoSEU/releases/tag/AutoSEU_1.6)下载最新版本安装包并解压，确保文件夹中的chromedriver.exe与AutoSEU_1.6.exe在同一文件夹即可（chromedriver需要与chrome浏览器版本对应，压缩包中自带的是目前的最新版，如有更新请自行前往[对应网站](http://npm.taobao.org/mirrors/chromedriver)下载）。
 直接点击exe文件运行程序，第一次运行需要输入您的一卡通号、密码、家长、辅导员等信息（完全保存个人计算机本地，并不会泄露给任何人），之后不需要再进行此操作。
 
 需要安装好chrome浏览器，最好是安装在默认位置，否则操作会比较麻烦
