@@ -1,5 +1,7 @@
 # AutoSEU
 
+[![Release Version](https://img.shields.io/github/release/TimeLeSsROMO/AutoSEU)](https://github.com/TimeLeSsROMO/AutoSEU/releases/)
+
 自动进行东南大学的每日健康申报以及次日的出校审批
 
 一个自动每日健康申报以及次日出校审批的python脚本，基于Python-Selenium，Chrome-Chromedriver
