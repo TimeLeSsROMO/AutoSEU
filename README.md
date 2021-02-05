@@ -2,6 +2,8 @@
 
 [![Release Version](https://img.shields.io/github/release/TimeLeSsROMO/AutoSEU)](https://github.com/TimeLeSsROMO/AutoSEU/releases/)
 
+注意：学校的系统改版很勤，服务器稳定性也很差，各种状况时有发生（比如进不去、网页跳错、健康申报没事干加个新问题、销假会不会直接批、不销假能不能请假、请假是人工批还是直接批等等等…），真的让人神烦。我只是一个人，各种事很多，更新不会特别快，大家自行判断
+
 自动进行东南大学的每日健康申报以及次日的出校审批
 
 一个自动每日健康申报以及次日出校审批的python脚本，基于Python-Selenium，Chrome-Chromedriver
@@ -16,12 +18,34 @@ python3
 
 与浏览器对应的Webdriver
 
-正常使用请前往[Releases](https://github.com/TimeLeSsROMO/AutoSEU/releases/tag/AutoSEU_1.6)下载最新版本安装包并解压，确保文件夹中的chromedriver.exe与AutoSEU_1.6.exe在同一文件夹即可（chromedriver需要与chrome浏览器版本对应，压缩包中自带的是目前的最新版，如有更新请自行前往[对应网站](http://npm.taobao.org/mirrors/chromedriver)下载）。
+正常使用请前往[Releases](https://github.com/TimeLeSsROMO/AutoSEU/releases)下载最新版本安装包并解压，确保文件夹中的chromedriver.exe与AutoSEU.exe在同一文件夹即可（chromedriver需要与chrome浏览器版本对应，压缩包中自带的是目前的最新版，如有更新请自行前往[对应网站](http://npm.taobao.org/mirrors/chromedriver)下载）。
 直接点击exe文件运行程序，第一次运行需要输入您的一卡通号、密码、家长、辅导员等信息（完全保存个人计算机本地，并不会泄露给任何人），之后不需要再进行此操作。
 
 需要安装好chrome浏览器，最好是安装在默认位置，否则操作会比较麻烦
 
 请确保在现版系统中进行过至少一次健康申报和出校审批，否则可能出现奇怪的错误导致无法正常运行
+
+Version 1.9更新日志：
+
+修改代码，适用于最新改版的学校系统；
+
+程序精简，优化多余代码；
+
+优化加速整个脚本的运行速度；
+
+优化改善销假的判断逻辑；
+
+改变申请销假的逻辑（学校系统中申请销假抽风中，目前是采取撤回操作，否则无法请假）。
+
+PS：
+
+如果打不开可以尝试将exe同目录下的loginData.json删除后再试；
+
+自带的chromedriver是windows，版本号88.0.4324.96，适不适配你的chrome看一下你的版本号，对不上不能运行的自行去下载，和exe放同一目录即可；
+
+学校的销假系统基本过几天就会抽一次筋，发一次疯，申请后不会直接通过，影响请假。如果有问题的话自己进系统中把所有没有销的假都撤销掉（点进去，拉到最下面点撤销——确定），后续使用本脚本不会再有此问题。
+
+学校健康申报系统中新增一个“近14天内有无与新型冠状病毒感染患者或无症状感染者（核酸检测阳性者）有接触史？”，大家第一次使用请先在系统中选择一次“否”，后续使用本脚本就不会有问题，就偷个小懒（狗头）
 
 Version 1.6更新日志：
 
