@@ -2,11 +2,13 @@
 
 [![Release Version](https://img.shields.io/github/release/TimeLeSsROMO/AutoSEU)](https://github.com/TimeLeSsROMO/AutoSEU/releases/)
 
+目前新版win10标配了Edge chromium的浏览器，每个人都有，使用起来更方便，chrome对部分人可能需要另外安装，从1.9.10版本开始，这里将只更新Edge版，chrome后续不再更新，周知
+
 注意：学校的系统改版很勤，服务器稳定性也很差，各种状况时有发生（比如进不去、网页跳错、健康申报没事干加个新问题、销假会不会直接批、不销假能不能请假、请假是人工批还是直接批等等等…），真的让人神烦。我只是一个人，各种事很多，更新不会特别快，大家自行判断
 
 自动进行东南大学的每日健康申报以及次日的出校审批
 
-一个自动每日健康申报以及次日出校审批的python脚本，基于Python-Selenium，Chrome-Chromedriver
+一个自动每日健康申报以及次日出校审批的python脚本，基于Python-Selenium，Chrome-Chromedriver（1.9.10版改为Edge-webdriver，系统自带，无需下载其他浏览器）
 
 基于[StephenHoo/AutoLogin](https://github.com/StephenHoo/AutoLogin)，但是分支不过去，是我自己太憨了…只能自己新建一个项目了，请谅解。部分内容可以参见这位老哥的内容，普通使用只需要在这里下载，点开即可。
 
@@ -18,12 +20,26 @@ python3
 
 与浏览器对应的Webdriver
 
-正常使用请前往[Releases](https://github.com/TimeLeSsROMO/AutoSEU/releases)下载最新版本安装包并解压，确保文件夹中的chromedriver.exe与AutoSEU.exe在同一文件夹即可（chromedriver需要与chrome浏览器版本对应，压缩包中自带的是目前的最新版，如有更新请自行前往[对应网站](http://npm.taobao.org/mirrors/chromedriver)下载）。
+正常使用请前往[Releases](https://github.com/TimeLeSsROMO/AutoSEU/releases)下载最新版本安装包并解压，确保文件夹中的chromedriver.exe（1.9.10改为msedgedriver.exe）与AutoSEU.exe在同一文件夹即可（chromedriver or msedgedriver需要与chrome or edge浏览器版本对应，压缩包中自带的是目前的最新版，如有更新请自行前往对应网站[chrome，chromedriver](http://npm.taobao.org/mirrors/chromedriver)，[edge，msedgedriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)下载）。
 直接点击exe文件运行程序，第一次运行需要输入您的一卡通号、密码、家长、辅导员等信息（完全保存个人计算机本地，并不会泄露给任何人），之后不需要再进行此操作。
 
-需要安装好chrome浏览器，最好是安装在默认位置，否则操作会比较麻烦
+需要安装好chrome浏览器，最好是安装在默认位置，否则操作会比较麻烦（1.9.10版不再需要）
 
 请确保在现版系统中进行过至少一次健康申报和出校审批，否则可能出现奇怪的错误导致无法正常运行
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Version 1.9.10Edge更新日志：
+
+1.换用Edge chromium浏览器，不需要特别安装chrome
+
+2.细节优化
+
+没有大的逻辑调整，和上一版本质区别很小，所有需要注意的点也一样，目前学校系统的最终版。
+
+压缩包里的edgedriver是Edge chromium 89.0.774.63版的，如果不适配你的，按上述说明下载对应版本Microsoft Webdriver
+
+为了普适性，以后有更新也会只更新Edge版，chrome版没得咯
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
